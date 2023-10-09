@@ -1,0 +1,53 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+.p-menubar-root-list,
+.p-menubar-button {
+  margin-left: auto;
+}
+
+.p-menubar {
+  background: transparent;
+  border: 0;
+}
+
+hr {
+  border-bottom: 0;
+  border-color: var(--surface-500);
+}
+
+.custom-link {
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border 0.4s ease;
+  @media (hover: hover) {
+    &:hover {
+      border-color: var(--primary-color);
+    }
+  }
+}
